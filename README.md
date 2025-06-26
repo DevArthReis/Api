@@ -3,7 +3,7 @@
 ---
 Este repositório é destinado ao projeto **Ruralpharm**, uma aplicação web voltada para o gerenciamento do uso de medicamentos na pecuária. Seu objetivo é reduzir erros na administração de remédios, garantir a rastreabilidade dos tratamentos e aumentar a produtividade das fazendas. A plataforma é desenvolvida para atender pecuaristas, veterinários, cooperativas e consultores agropecuários que lidam com a saúde do gado.
 
-**Drive do projeto**: [[Acesse o Drive para mais detalhes](https://docs.google.com/document/d/1mJs7k2uh9j8EruLGJSgSxO4gk7W7WTZCFvuZfs6qw3w/edit?tab=t.0)]
+**Drive do projeto**: [[Acesse o Drive para mais detalhes](https://docs.google.com/document/d/1iKLnugVGdPCIxbzsXtiYKYQw79tbGQYDu54wkVo3Dkk/edit?tab=t.0)]
 
 ---
 
