@@ -9,7 +9,7 @@ using TechLibrary.Exception;
 
 namespace TechLibrary.Api.UseCases.Users.Register
 {
-public class RegisterUsersUseCase
+public class RegisterUserUseCase
 {
         public ResponseRegisteredUserJson Execute(RequestUserJson request)
         {

@@ -15,7 +15,7 @@ namespace TechLibrary.Api.Controllers
         public IActionResult Register(RequestUserJson request)
         {
            
-                var useCase = new RegisterUsersUseCase();
+                var useCase = new RegisterUserUseCase();
                 var response = useCase.Execute(request);
                 return Created(string.Empty, response);
             
