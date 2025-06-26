@@ -12,7 +12,7 @@ namespace TechLibrary.Api.UseCases.Login.DoLogin
         public ResponseRegisteredUserJson Execute(RequestLoginJson request)
         {
             var dbContext = new TechLibraryDbContext();
-            var user = dbContext.Users.FirstOrDefault(user => user.Email.Equals(request.Email));
+            var user = dbContext.User.FirstOrDefault(user => user.Email.Equals(request.Email));
             if (user is null)          
                 throw new InvalidLoginException();
             

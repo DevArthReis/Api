@@ -23,7 +23,7 @@ public class RegisterUsersUseCase
                 Password = crypthography.HashPassword(request.Password),
             };
             
-            dbContext.Users.Add(entity);
+            dbContext.User.Add(entity);
             dbContext.SaveChanges();
             var tokenGenerator = new JwtTokenGenerator();
             return new ResponseRegisteredUserJson
@@ -38,7 +38,7 @@ public class RegisterUsersUseCase
         {
             var validator = new RegisterUserValidator();
             var result = validator.Validate(request);
-            var existUserWithEmail = dbContext.Users.Any(user => user.Email.Equals(request.Email));
+            var existUserWithEmail = dbContext.User.Any(user => user.Email.Equals(request.Email));
             if (existUserWithEmail)
                 result.Errors.Add(new ValidationFailure("Email", "Email já cadastrado"));
             if (result.IsValid == false)

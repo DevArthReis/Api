@@ -6,7 +6,7 @@ namespace TechLibrary.Api.Infraestructure.DataAccess
 
     public class TechLibraryDbContext : DbContext
     {
-        public DbSet<User> Users { get; set; }
+        public DbSet<User> User { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=C:\\Users\\arthu\\Downloads\\TechLibraryDb.db");
