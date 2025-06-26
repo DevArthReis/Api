@@ -1,98 +1,57 @@
+![Capa do Ruralpharm](https://i.imgur.com/mvgwn28.png)
 
-# 📚 TechLibrary API
+---
+Este repositório é destinado ao projeto **Ruralpharm**, uma aplicação web voltada para o gerenciamento do uso de medicamentos na pecuária. Seu objetivo é reduzir erros na administração de remédios, garantir a rastreabilidade dos tratamentos e aumentar a produtividade das fazendas. A plataforma é desenvolvida para atender pecuaristas, veterinários, cooperativas e consultores agropecuários que lidam com a saúde do gado.
 
-API REST em ASP.NET Core para autenticação e cadastro de usuários, com JWT e validações customizadas.
+**Drive do projeto**: [[Acesse o Drive para mais detalhes](https://docs.google.com/document/d/1mJs7k2uh9j8EruLGJSgSxO4gk7W7WTZCFvuZfs6qw3w/edit?tab=t.0)]
 
 ---
 
-## 🚀 Pré-requisitos
+## Descrição do Projeto
 
-- [.NET 9 SDK (9.0.203 ou superior)](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
-- Visual Studio 2022 (recomendado) ou qualquer editor com suporte a C#
-- Git (opcional)
+**Ruralpharm** é uma solução moderna e inteligente para o controle e acompanhamento do uso de medicamentos em animais de produção. O sistema oferece uma interface intuitiva para o registro de tratamentos, controle de estoque de medicamentos e emissão de relatórios com dados históricos.
 
----
-
-## 🔧 Instalação e Configuração
-
-1. **Clone o repositório** (ou extraia o `.zip`):
-   ```bash
-   git clone https://github.com/seu-usuario/TechLibrary.Api.git
-   ```
-
-2. **Abra a solução no Visual Studio**
-   - Arquivo principal: `TechLibrary.sln`
-
-3. **Restaure os pacotes NuGet:**
-   - Via terminal:
-     ```bash
-     dotnet restore
-     ```
-   - Ou clique com o botão direito na solução e selecione: `Restaurar pacotes NuGet`.
-
-4. **(Opcional) Defina o ambiente como Development**  
-   Isso permite acessar o Swagger em ambientes de desenvolvimento:
-   ```bash
-   setx ASPNETCORE_ENVIRONMENT "Development"
-   ```
+Com foco em segurança e precisão, o Ruralpharm proporciona acesso por diferentes perfis de usuário, permitindo uma gestão colaborativa e centralizada da saúde animal. Além disso, o sistema foi estruturado com base em uma arquitetura robusta e preparada para futuras integrações com tecnologias como inteligência artificial, promovendo previsões de doenças e decisões mais assertivas no campo.
 
 ---
 
-## ▶️ Como Rodar a API
+## Tecnologias Utilizadas
 
-### 🔁 Opção 1: Visual Studio
-- Defina o projeto `TechLibrary.Api` como `Projeto de Inicialização`
-- Pressione **F5** ou **Ctrl + F5**
-
-### 💻 Opção 2: Terminal
-```bash
-cd TechLibrary.Api
-dotnet run
-```
-
-A API será executada por padrão em:
-
-```
-http://localhost:5000
-```
+- **Back-end**: .NET (C#)
+- **Banco de Dados**: SQlite
 
 ---
 
-## 📑 Documentação Swagger
+## Público-Alvo
 
-Se habilitado (padrão), o Swagger estará disponível em:
-
-```
-http://localhost:5000/swagger
-```
-
-Caso não apareça, remova o bloco `if (app.Environment.IsDevelopment())` no `Program.cs` e deixe assim:
-
-```csharp
-app.MapOpenApi();
-app.UseSwagger();
-app.UseSwaggerUI();
-```
+- Pecuaristas
+- Veterinários
+- Cooperativas agropecuárias
+- Consultores e técnicos do setor
 
 ---
 
-## 🔐 Endpoints principais
+## Funcionalidades Principais
 
-### ▶️ POST `/Login`
-- Autentica um usuário e retorna token JWT.
-
-### ▶️ POST `/Users`
-- Registra um novo usuário.
-
----
-
-## ❓ Dúvidas ou problemas?
-
-- Verifique se está usando a versão correta do .NET SDK.
-- Confira se os pacotes NuGet foram restaurados corretamente.
-- Certifique-se de que `TechLibrary.Api` foi definido como projeto de inicialização.
-- Use o Swagger para testar os endpoints rapidamente.
+- Autenticação de usuários com controle de acesso por perfil (admin, usuário comum)
+- Cadastro e gerenciamento de usuários, medicamentos e tratamentos
+- Histórico de aplicação de medicamentos por animal ou lote
+- Interface responsiva e acessível
 
 ---
 
-🧑‍💻 Desenvolvido por: Arthur Albuquerque dos Reis
+## Estrutura Modular
+- `/backend` → API RESTful (.NET C#)
+- `/database` → Scripts e modelos do banco de dados
+- `/docs` → Documentação técnica e diagramas
+
+---
+
+## Diferenciais
+
+- Redução de erros e perdas na aplicação de medicamentos
+- Centralização de informações sanitárias
+- Interface intuitiva e acessível em múltiplas plataformas
+- Preparado para integrações com IA e automações futuras
+
+---
