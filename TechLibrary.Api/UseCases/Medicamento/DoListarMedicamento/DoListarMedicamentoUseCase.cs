@@ -14,7 +14,7 @@ namespace TechLibrary.Api.UseCases.Login.DoLogin
             var dbContext = new TechLibraryDbContext();
             var user = dbContext.Medicamento.FirstOrDefault(user => user.Nome.Equals(request.Nome));
             if (user is null)          
-                throw new InvalidLoginException();
+                throw new DataException();
             
             return new ResponseRegisteredMedicamentoJson
             {
